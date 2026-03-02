@@ -1,0 +1,175 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>my Feedback</title>
+    </head>
+    <body>
+        <header>
+        <h1> <u>  Student Profile & Course Portal </h1>  </u>
+        <nav> 
+            <ul>
+                <li> <a href="Home.html"> <button> Home </button> </a> </li>
+                <li> <a href="Profile.html"> <button> Profile </button> </a> </li>
+                <li> <a href="Courses.html"> <button> course </button> </a> </li>
+                <li> <a href="Graded.html"> <button> Grade </button> </a> </li>
+                <li> <a href="Contact.html"> <button> contact </button> </a> </li>
+                <li> <a href="Feedback.html"> <button> Feedback </button> </a> </li>
+            </ul> 
+        </nav>
+    </header> <hr>
+        <h1> <u> Submit Feedback Form </u> </h1> 
+        <form action="submit.php" method="post">
+
+            <!-- Naam lene ke liye -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" placeholder="apna name likhe">
+            <br></br>
+
+            <!-- Email likhne ke liye -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="useremail" placeholder="apna email likhe">
+            <br></br>
+
+            <!-- Dropdown ke liye -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="usergender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="satate">Satate : </label>
+
+            <select id="satate"name="usersatate">
+
+                <option value="Andhra Pradesh" >Andhra Pradesh</option> 
+                <option value="Arunachal Pradesh" >Arunachal Pradesh</option> 
+                <option value="Assam" >Assam</option>   
+                <option value="Bihar" >Bihar</option> 
+                <option value="Chhattisgarh" >Chhattisgarh</option> 
+                <option value="Goa" >Goa</option> 
+                <option value="Gujarat" >Gujarat</option> 
+                <option value="Haryana" >Haryana</option> 
+                <option value="Himachal Pradesh" >Himachal Pradesh</option> 
+                <option value="Jharkhand" >Jharkhand</option> 
+                <option value="Karnataka" >Karnataka</option> 
+                <option value="Kerala" >Kerala</option> 
+                <option value="Madhya Pradesh" >Madhya Pradesh</option> 
+                <option value="Maharashtra" >Maharashtra</option> 
+                <option value="Manipur" >Manipur</option> 
+                <option value="Meghalaya" >Meghalaya</option> 
+                <option value="Mizoram" >Mizoram</option> 
+                <option value="Nagaland" >Nagaland</option> 
+                <option value="Odisha" >Odisha</option> 
+                <option value="Punjab" >Punjab</option> 
+                <option value="Rajasthan" >Rajasthan</option> 
+                <option value="Sikkim" >Sikkim</option> 
+                <option value="Tamil Nadu" >Tamil Nadu</option> 
+                <option value="Telangana" >Telangana</option> 
+                <option value="Tripura" >Tripura</option> 
+                <option value="Uttar Pradesh" >Uttar Pradesh</option> 
+                <option value="Uttarakhand" >Uttarakhand</option> 
+                <option value="West Bengal" >West Bengal</option> 
+                <option value="other" >Other</option>  
+            </select>
+            <br><br>
+            <h3>Choose which page you like best : </h3>
+            <ol>
+                <li>
+                    <label> 
+                        <input type="checkbox" name="username" value="Page"> Website Design
+                    </label> 
+                </li>
+                <li> 
+                    <label>
+                        <input type="checkbox" name="username" value="Page"> Course Content
+                    </label> 
+                </li>
+                <li> 
+                    <label> 
+                        <input type="checkbox" name="username" value="Page"> Teaching Quality
+                    </label> 
+                </li>
+                <li> 
+                    <label> 
+                        <input type="checkbox" name="username" value="Page"> Grades System
+                    </label> 
+                </li>
+                <li> 
+                    <label> 
+                        <input type="checkbox" name="username" value="Page"> User Experience
+                    </label>
+                </li>
+                <li> 
+                    <label> 
+                        <input type="checkbox" name="username" value="Page">User Experience
+                    </label>
+                </li>
+            </ol>
+            <br>
+            <h3>How did you like it  :</h3>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="lebel" value="Excellent"> Excellent 
+                    </label> 
+                </li>
+                <li> 
+                    <label>
+                        <input type="radio" name="lebel" value="Very Good"> Very Good
+                    </label> 
+                 </li>
+                 <li>
+                    <label> 
+                        <input type="radio" name="label" value="Good"> Good 
+                    </label> 
+                </li>
+                <li>
+                    <label> 
+                        <input type="radio" name="lebel" value="Average"> Average 
+                    </label> 
+                </li>
+                <li>
+                    <label> 
+                        <input type="radio" name="lebel" value=" Poor"> Poor
+                    </label> 
+                </li>
+            </ul>
+            <br><br>
+        
+            <p>Would you recommend this Student Profile & Course Portal  to others?</p>
+            <ol>
+                <li>
+                    <input type="radio" name="recommend" value="yes"> Yes
+                </li>
+                <li>
+                    <input type="radio" name="recommend" value="no"> No
+                </li>
+            </ol>
+            <!-- Lamba sms lene ke liye -->
+            <label for="message">Whrite your Feedback here:</label>
+            <textarea id="message" name="usermessage" placeholder="apna message likhe"></textarea>
+            <br><br>
+
+            <!-- Submit button ke liye -->
+                <h1>
+                    <input type="submit" value="Submit" hspace="40">
+                </h1>
+        </form>
+        <a href="Contact.html"> 
+            <button> Back </button>
+        </a> <br> <br> 
+
+        <footer>
+            @ 2026 Kavita Yadav |
+            Student Portfolio Website
+            All Rights Reserved.
+        </footer>
+            
+
+        <hr>
+    </body>
+    </html>
+
